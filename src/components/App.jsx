@@ -7,7 +7,6 @@ import notes from "../notes"
 
 
 
-
 function App() {
 
     return (
