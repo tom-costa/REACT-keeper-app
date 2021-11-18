@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/tom-costa/REACT-keeper-app/blob/main/public/screenshot.png" alt="Keeper React Project"/>
+  <img src="https://github.com/tom-costa/REACT-keeper-app/blob/main/public/screenshot_app.png" alt="Keeper React Project"/>
 </p>
 
 # Keeper App
