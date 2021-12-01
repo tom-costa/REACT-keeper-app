@@ -1,5 +1,6 @@
 import React, {useState} from "react"
-import ReactDOM from "react-dom"
+import DeleteIcon from '@material-ui/icons/Delete';
+// import ReactDOM from "react-dom"
 
 
 function Note(props) {
@@ -14,6 +15,12 @@ function Note(props) {
     function noHover(){
         setHover(false)
     }
+
+    function handleClick(){
+        props.onDelete(props.id)
+    }
+
+
     return (
         <div className="note" 
         style={{backgroundColor: isHovered ? "#fab1a0" : "white"}}
@@ -21,6 +28,9 @@ function Note(props) {
         onMouseOut={noHover}>
             <h1>{props.title}</h1>
             <p>{props.content}</p>
+            <button onClick={handleClick}>
+            <DeleteIcon />
+            </button>
         </div>
     )
 }
